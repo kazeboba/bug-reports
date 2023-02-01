@@ -1,0 +1,280 @@
+﻿"Issue Id","Project","Tags","Summary","Reporter","Created","Updated","Resolved","Priority","Type","State","Assignee","Sprints","Story points","Environment","QASE TC # (only for bug)","Description","Votes"
+"G33-42","group3.3","Star","New TO-DO - Возврат на главный экран из создания новой записи стрелкой тулбара","IliaRumyancev","30 Jan 2023","30 Jan 2023",,"Show-stopper","Bug","Open","Unassigned","Unscheduled",,"No environment","https://app.qase.io/case/G33-130","**Preconditions:**
+
+1. Приложение установлено
+
+| STR | Ex. Result | Result |
+| --- | --- | --- |
+| 1\. Запустить приложение | Приложение запущено | Приложение запущено |
+| 2\. Перейти к созданию новой<br/> записи нажав на кнопу ""+"" | Открыт экран создания <br/>новой записи | Открыт экран создания <br/>новой записи |
+| 3\. Не создавая записи выйти на главный экран нажав<br/> стрелку в тубаре. | Происходит переход на <br/>главный экран | НЕ происходит переход на <br/>главный экран |
+
+Видео бага в аттаче:
+
+0:04 - не работающая стрелка
+
+Лог в аттаче","0"
+"G33-43","group3.3","","New TO-DO - В Title новой записи невозможно ввести больше 50 символов","IliaRumyancev","30 Jan 2023","30 Jan 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,"No environment","https://app.qase.io/case/G33-133","**Preconditions:**
+
+1. Приложение установлено
+2. Приложение запущено
+
+   Title: ""В этом тексте есть пятьдесят символов на кириллице""
+
+   TO-DO: 
+
+| STR | Ex. Result | Result |
+| --- | --- | --- |
+| 1\. Перейти к созданию новой<br/>записи нажав на кнопу ""+"" | Открылся экран New TO-DO | Открылся экран New TO-DO |
+| 2\. Ввести в поле Title 50 латинских символов | Все символы введены | Все символы введены |
+| 3\. Ввести в поле еще 1 символ | Символ НЕ введен | Символ введен! |
+| 4\. Создать запись | В заголовке записи 50 введеных символов | В заголовке записи 51 введеных символов |
+
+Видео бага в аттаче:
+
+0:10 - добавление 51 символа
+
+0:18 - создание записи с 51 символом в Title
+
+Лог в аттаче","0"
+"G33-44","group3.3","","New TO-DO - Возврат на главный экран из создания новой записи жестом ""назад""","IliaRumyancev","30 Jan 2023","30 Jan 2023",,"Show-stopper","Bug","Open","Unassigned","Unscheduled",,"No environment","https://app.qase.io/case/G33-130","**Preconditions:**
+
+1. Приложение установлено
+
+| STR | Ex. Result | Result |
+| --- | --- | --- |
+| 1\. Запустить приложение | Приложение запущено | Приложение запущено |
+| 2\. Перейти к созданию новой<br /> записи нажав на кнопу ""+"" | Открыт экран создания <br />новой записи | Открыт экран создания <br />новой записи |
+| 3\. Не создавая записи выйти на главный экран<br/> используя жест назад. | Происходит переход на <br />главный экран | НЕ происходит переход на <br />главный экран |
+
+Видео бага в аттаче:
+
+0:08 - не работающий жест
+
+Лог в аттаче","0"
+"G33-45","group3.3","","New TO-DO - В TO-DO новой записи невозможно ввести больше 256 символов","IliaRumyancev","30 Jan 2023","30 Jan 2023",,"Show-stopper","Bug","Open","Unassigned","Unscheduled",,"No environment","https://app.qase.io/case/G33-133","**Preconditions:**
+
+1. Приложение установлено
+
+2. Приложение запущено
+
+   Title: ""Test""
+
+   TO-DO: ""В этом тексте есть двести пятьдесят шесть кириллических символов. В этом тексте есть двести пятьдесят шесть кириллических символов. В этом тексте есть двести пятьдесят шесть кириллических символов. В этом тексте есть двести пятьдесят шесть кириллических си""
+
+| STR | Ex. Result | Result |
+| --- | --- | --- |
+| 1\. Перейти к созданию новой<br />записи нажав на кнопу ""+"" | Открылся экран New TO-DO | Открылся экран New TO-DO |
+| 2\. Ввести в поле TO-DO 256 символов<br />на кириллице | Все символы введены | Все символы введены |
+| 3\. Ввести в поле еще 1 символ | Символ НЕ введен | Символ введен! |
+| 4\. Создать запись | В заголовке записи 257 введеных символов | Запись не создалась, удалились все созданные записи |
+
+Видео бага в аттаче:
+
+0:09 - добавление 257 символа
+
+0:14 - запись не создалась
+
+Лог в аттаче","0"
+"G33-46","group3.3","","New TO-DO - Название записи может содержать цифры","IliaRumyancev","30 Jan 2023","30 Jan 2023",,"Show-stopper","Bug","Open","Unassigned","Unscheduled",,"No environment","https://app.qase.io/case/G33-133","**Preconditions:**
+
+1. Приложение установлено
+
+2. Приложение запущено
+
+   Цифры: Title: ""1234""
+
+| STR | Ex. Result | Result |
+| --- | --- | --- |
+| 1\. Перейти к созданию новой<br />записи нажав на кнопу ""+"" | Открылся экран New TO-DO | Открылся экран New TO-DO |
+| 2\. Ввести в поле Title цифры из <br />предусловий | Все символы введены | Все символы введены |
+| 3\. Создать запись | В заголовке записи введеные символы | Запись не создалась, удалились все <br />существующие записи! |
+
+Видео бага в аттаче:
+
+0:09 - ввод цифр в Title
+
+0:14 - Запись не создалась, удалились все 
+существующие записи!
+
+Лог в аттаче","0"
+"G33-47","group3.3","","New TO-DO - Поле TO-DO может содержать цифры","IliaRumyancev","30 Jan 2023","30 Jan 2023",,"Show-stopper","Bug","Open","Unassigned","Unscheduled",,"No environment","https://app.qase.io/case/G33-136","**Preconditions:**
+
+1. Приложение установлено
+
+2. Приложение запущено
+
+   Цифры: Title: ""Test""
+
+   TO-DO: ""123456""
+
+| STR | Ex. Result | Result |
+| --- | --- | --- |
+| 1\. Перейти к созданию новой<br />записи нажав на кнопу ""+"" | Открылся экран New TO-DO | Открылся экран New TO-DO |
+| 2\. Ввести в поле Title данные из <br />предусловий | Все символы введены | Все символы введены |
+| 3\. Ввести в поле TO-DO цифры из <br/>предусловий | Все символы введены | Все символы введены |
+| 4\. Создать запись | В заголовке записи введеные символы | Запись не создалась, удалились все <br />существующие записи! |
+
+Видео бага в аттаче:
+
+0:09 - ввод цифр в TO-DO
+
+0:14 - Запись не создалась, удалились все
+существующие записи!
+
+Лог в аттаче","0"
+"G33-26","group3.3","Star","Shopping Cart: possible to enter special chars/letters to input with products quantity","IliaRumyancev","4 Jan 2023","4 Jan 2023",,"Normal","Task","Open","Unassigned","Unscheduled",,"No environment","No qase tc # (only for bug)","**Description:** possible to enter special chars/letters to input with products quantity. Alert not shown.
+
+**Preconditions:** There are one or more products in Shopping Cart
+
+**STR:**
+
+1. Go to Shopping cart page
+2. Input special chars/letters in products quantity input field
+
+**Expected result:**
+
+* Not possible to enter special chars/letters to input with products quantity. Alert is shown.
+
+**Result:**
+
+* Possible to enter special chars/letters to input with products quantity. Alert not shown.","0"
+"G33-27","group3.3","Star","Shopping Cart: Estimate Shipping: No checking for correct Index","IliaRumyancev","4 Jan 2023","4 Jan 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,"No environment","No qase tc # (only for bug)","**Description:** No checking for correct Index
+
+**Preconditions:** There are one or more products in Shopping Cart
+
+**STR:**
+
+1. Go to Shopping cart page
+2. Choose Country ""United States"" in Estimate Shipping block
+3. Choose any State
+4. Enter incorrect ZIP
+
+**Expected result:**
+
+* ""Enter right ZIP code"" alert is shown
+
+**Result:**
+
+* No any alerts are shown","0"
+"G33-29","group3.3","","Shopping Cart: possible to enter special chars/letters to input with products quantity","IliaRumyancev","4 Jan 2023","4 Jan 2023",,"Normal","Task","Open","Unassigned","Unscheduled",,"No environment","No qase tc # (only for bug)","**Description:** possible to enter special chars/letters to input with products quantity. Alert not shown.
+
+**Preconditions:** There are one or more products in Shopping Cart
+
+**STR:**
+
+1. Go to Shopping cart page
+2. Input special chars/letters in products quantity input field
+
+**Expected result:**
+
+* Not possible to enter special chars/letters to input with products quantity. Alert is shown.
+
+**Result:**
+
+* Possible to enter special chars/letters to input with products quantity. Alert not shown.","0"
+"G33-28","group3.3","","Checkout: Billing Address: possible to enter special chars and digits to ""First name"" field","IliaRumyancev","4 Jan 2023","4 Jan 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,"No environment","No qase tc # (only for bug)","**Description:** possible to enter special chars and digits to ""First name"" field
+
+**Preconditions:**
+
+1. There are one or more products in Shopping Cart
+2. Click  Checkout button to Billing address page
+
+**STR:**
+
+1. Choose New Address then click Continue button
+2. Try to fill in ""First name"" input field with digits and special chars
+
+**Expected result:**
+
+* Not possible to fill in ""First name"" input field with digits and special chars
+
+**Result:**
+
+* Possible to fill in ""First name"" input field with digits and special chars","0"
+"G33-8","group3.3","","Add Customer: Field name does not become bold when not empty","IliaRumyancev","8 Dec 2022","23 Dec 2022","23 Dec 2022","Normal","Bug","Done","Unassigned","Unscheduled",,"Windows 10 x64 20H2, сборка 19042.685;Google Chrome 108.0.5359.99 (64-bit)","No qase tc # (only for bug)","**Description:** Field name does not become bold when not empty.
+
+**STR:**
+
+1. Go to [h](https://demo.guru99.com/telecom/addcustomer.php)[ttps://demo.guru99.com/telecom](ttps://demo.guru99.com/telecom/addcustomer.php) page
+2. Check all input fields for names and placeholders availability
+
+**Expected result:**
+
+* All input fields has names and placeholders.
+
+**Result:**
+
+* There are no name fields on the page","0"
+"G33-7","group3.3","","Add Customer: Allow to add customer w/o ""Background check""","IliaRumyancev","8 Dec 2022","23 Dec 2022","23 Dec 2022","Major","Bug","Done","Unassigned","Unscheduled",,"Windows 10 x64 20H2, сборка 19042.685;  Google Chrome 108.0.5359.99 (64-bit)","G33-5","**Descryption:** System allow to add customer without checking any RB in ""Background check"".
+
+**STR:**
+
+1. Go to <https://demo.guru99.com/telecom/addcustomer.php>
+2. Check nothing in Background Check module
+3. Fill in all user data to all input fields of the page
+4. Click on the ""Submit"" button
+
+**Expected result:**
+
+* Appeared popup with ""Please fill all fields"" warning
+
+**Result:**
+
+* Opens <https://demo.guru99.com/telecom/access.php?uid=XXXXXX> page, where XXXXXX new customers ID.
+
+
+
+
+","0"
+"G33-6","group3.3","","Add Tariff Plan: Misprint in header of ""Add Tariff Plan"" page (check-list based)","IliaRumyancev","8 Dec 2022","23 Dec 2022","23 Dec 2022","Normal","Bug","Done","Unassigned","Unscheduled",,"Windows 10 x64 20H2, сборка 19042.685;Google Chrome 108.0.5359.99 (64-bit)","No qase tc # (only for bug)","**Requirements:** Clicking ""Add Tariff Plan"" button opens ""Add Tariff Plan"" page
+
+**STR:**
+
+1. Go to [https://demo.guru99.com/telecom](https://demo.guru99.com/telecom/addcustomer.php) page
+2. Click ""Add Tariff Plan"" button
+3. Check header ""Add Tariff Plan"" page
+
+**Expected result:**
+
+* The header of ""Add Tariff Plan"" page is ""Add Tariff Plan"".
+
+**Result:**
+
+* The header of ""Add Tariff Plan"" page is ""Add Tariff Plans"".","0"
+"G33-5","group3.3","","Mian page: No any popups clicking ""Pay Billing"" button (check-list based)","IliaRumyancev","8 Dec 2022","23 Dec 2022","23 Dec 2022","Normal","Bug","Done","Unassigned","Unscheduled",,"Windows 10 x64 20H2, сборка 19042.685;Google Chrome 108.0.5359.99 (64-bit)","No qase tc # (only for bug)","**Requirements:** Clicking ""Pay Billing"" button appears pop-up with payment selector
+
+*Based on check-list <https://docs.google.com/spreadsheets/d/1XxptvMhoZeKhamSs6SJO_JvITth7zKHX6nBao6WuZwI/edit#gid=0>*
+
+**STR:**
+
+1. Go to [https://demo.guru99.com/telecom](https://demo.guru99.com/telecom/addcustomer.php) page
+2. Click ""Pay Billing"" button
+
+**Expected result:**
+
+* Appears popup with payment selector like on pic![](bootstrap-5-payment-form-with-gradient-button.png){width=70%}
+
+**Result:**
+
+* No any popups clicking ""Pay Billing"" button appeared. Only ""Pay Billing"" page opens.
+
+*Video confirmation in attachment below.*
+
+
+","0"
+"G33-9","group3.3","","Add Customer: Warning after inputting special chars in ""Address"" feild","IliaRumyancev","8 Dec 2022","23 Dec 2022","23 Dec 2022","Normal","Bug","Done","Unassigned","Unscheduled",,"Windows 10 x64 20H2, сборка 19042.685;Google Chrome 108.0.5359.99 (64-bit)","No qase tc # (only for bug)","**Description:** ""Address"" input field not allow to input special characters.
+
+**STR:**
+
+1. Go to [h](https://demo.guru99.com/telecom/addcustomer.php)[ttps://demo.guru99.com/telecom](ttps://demo.guru99.com/telecom/addcustomer.php) page
+2. Fill in digits in ""Address"" input field
+3. Fill in special characters in ""Address"" input field
+
+**Expected result:**
+
+* Data shows in input fields. No warnings are found.
+
+**Result:**
+
+* Data shows in input fields. Warning under ""Address"" field ""Special characters are not allowed.","0"
